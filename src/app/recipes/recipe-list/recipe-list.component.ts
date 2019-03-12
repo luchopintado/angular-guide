@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -6,7 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-
+  recipes: Recipe[] = [
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  // tslint:disable-next-line: max-line-length
+    new Recipe('A test recipe', 'This is a simple test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/2048x1024/landscape-1520957481-grilled-salmon-horizontal.jpg?resize=600:*'),
+  ];
   constructor() { }
 
   ngOnInit() {
